@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cronômetro e Estatísticas
 
-## Getting Started
+Este repositório contém um projeto web desenvolvido com Next.js, React, e outras tecnologias modernas para oferecer funcionalidades de cronômetro e exibição de estatísticas. Abaixo, você encontrará informações sobre como executar o projeto, descrição dos componentes e explicação das principais escolhas técnicas.
 
-First, run the development server:
+---
+
+## 📌 Instruções para Execução do Projeto
+
+### Pré-requisitos
+
+- Node.js versão 18 ou superior.
+- npm (gerenciador de pacotes do Node) ou yarn.
+
+### Passos para execução local
+
+1. **Clone este repositório**
+
+   ```bash
+   git clone https://github.com/seu-usuario/cronometro-e-estatisticas.git
+
+Instale as dependências
+
+Navegue até a pasta do projeto e execute:
 
 bash
+Copiar
+Editar
+npm install
+ou, se preferir usar o yarn:
+
+bash
+Copiar
+Editar
+yarn install
+Inicie o servidor de desenvolvimento
+
+Após a instalação das dependências, inicie o servidor de desenvolvimento:
+
+bash
+Copiar
+Editar
 npm run dev
-# or
+ou com yarn:
+
+bash
+Copiar
+Editar
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Acesse o projeto no navegador
 
+O servidor estará rodando em http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧩 Descrição dos Componentes
+Este projeto utiliza uma série de bibliotecas e componentes que proporcionam uma experiência de desenvolvimento mais fluida e eficiente:
 
-You can start editing the page by modifying app/page.tsx. The page auto-updates as you edit the file.
+Componentes e Bibliotecas Principais
+React Hook Form: Usado para gerenciar formulários de forma eficiente e com validação de dados.
 
-This project uses [next/font](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Zod: Biblioteca de validação e tipagem de objetos, integrada com React Hook Form para validações avançadas.
 
-## Learn More
+Framer Motion: Biblioteca para animações e transições no React.
 
-To learn more about Next.js, take a look at the following resources:
+Radix UI: Fornece componentes acessíveis e sem estilos, como Dialog, Label, e Select, para construir interfaces customizadas e interativas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tailwind CSS: Framework de CSS utilitário para estilização rápida e responsiva.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+clsx: Utilizado para condicionalmente adicionar classes CSS aos elementos de forma simples e legível.
 
-## Deploy on Vercel
+zustand: Gerenciamento de estado leve e intuitivo para o React.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+⚙️ Principais Escolhas Técnicas
+Next.js: Framework React que permite a renderização do lado do servidor (SSR) e a criação de páginas estáticas. A escolha pelo Next.js facilita o SEO e melhora a performance.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Tailwind CSS: Optamos por usar o Tailwind CSS devido à sua capacidade de criar interfaces responsivas e estilizadas rapidamente, com o uso de classes utilitárias, sem a necessidade de escrever CSS customizado.
+
+Zod: Utilizado para validação de dados de forma fortemente tipada. Zod se integra bem com o React Hook Form, proporcionando validações de formulários fáceis e seguras.
+
+React Hook Form: Facilitando a manipulação de formulários, com foco na performance e integração perfeita com bibliotecas de validação como Zod.
+
+Framer Motion e Radix UI: Estas bibliotecas são usadas para criar animações e interações ricas, com foco na acessibilidade e usabilidade.
+
+TypeScript: Usado para garantir que o código seja mais seguro e previsível, com verificação estática de tipos.
+
+🛠️ Tecnologias Utilizadas
+Dependências
+next (versão 13.5.11)
+
+react (versão 18)
+
+react-dom (versão 18)
+
+tailwindcss
+
+framer-motion
+
+zustand
+
+zod
+
+@radix-ui/react-dialog
+
+@radix-ui/react-select
+
+clsx
+
+lucide-react
+
+react-hook-form
+
+tailwind-merge
+
+DevDependencies
+eslint
+
+typescript
+
+@types/node, @types/react, @types/react-dom
+
+postcss, autoprefixer
