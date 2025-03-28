@@ -22,29 +22,16 @@ Instale as dependências
 
 Navegue até a pasta do projeto e execute:
 
-bash
-Copiar
-Editar
 npm install
 ou, se preferir usar o yarn:
-
-bash
-Copiar
-Editar
 yarn install
 Inicie o servidor de desenvolvimento
 
 Após a instalação das dependências, inicie o servidor de desenvolvimento:
 
-bash
-Copiar
-Editar
 npm run dev
 ou com yarn:
 
-bash
-Copiar
-Editar
 yarn dev
 Acesse o projeto no navegador
 
@@ -82,7 +69,9 @@ Framer Motion e Radix UI: Estas bibliotecas são usadas para criar animações e
 TypeScript: Usado para garantir que o código seja mais seguro e previsível, com verificação estática de tipos.
 
 🛠️ Tecnologias Utilizadas
-Dependências
+
+Dependências:
+
 next (versão 13.5.11)
 
 react (versão 18)
@@ -109,7 +98,8 @@ react-hook-form
 
 tailwind-merge
 
-DevDependencies
+DevDependencies:
+
 eslint
 
 typescript
