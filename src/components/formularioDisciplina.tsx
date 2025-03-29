@@ -163,7 +163,7 @@ export default function DisciplinaForm() {
 							>
 								<Button
 									type="button"
-									className="bg-green-500 hover:bg-green-600 text-white"
+									className="bg-green-500 hover:bg-green-600 text-white w-full"
 									onClick={ativo ? pausar : iniciar}
 									disabled={!disciplina || !tema}
 								>
@@ -176,7 +176,7 @@ export default function DisciplinaForm() {
 							>
 								<Button
 									type="button"
-									className="bg-red-500 hover:bg-red-600 text-white"
+									className="bg-red-500 hover:bg-red-600 text-white w-full"
 									onClick={resetar}
 								>
 									Resetar
@@ -192,7 +192,7 @@ export default function DisciplinaForm() {
 										pausar();
 										setOpen(true);
 									}}
-									className="bg-blue-500 hover:bg-blue-600 text-white"
+									className="bg-blue-500 hover:bg-blue-600 text-white w-full"
 									disabled={!disciplina || !tema}
 								>
 									Salvar Tempo

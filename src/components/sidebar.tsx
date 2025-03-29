@@ -29,9 +29,12 @@ export default function Sidebar() {
 					isOpen ? 'w-48' : 'w-16'
 				} sm:w-48`}
 			>
+				<div>
+					<p className="hidden sm:block">Cronômetro e Estatísticas de Estudo</p>
+				</div>
 				<button
 					onClick={() => setIsOpen(!isOpen)}
-					className="text-white mb-4 p-2 rounded hover:bg-gray-700"
+					className="text-white mb-4 p-2 rounded hover:bg-gray-700 sm:hidden"
 				>
 					{isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
 				</button>

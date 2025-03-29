@@ -46,7 +46,6 @@ export const useCronometroStore = create<TCronometroState>((set, get) => ({
 			set({ intervaloId: null });
 		}
 		set({ ativo: false, segundos: 0 });
-		console.log('Tempo salvo');
 	},
 
 	setDisciplina: (disciplina: string) => set({ disciplina }),
@@ -80,7 +79,5 @@ export const useCronometroStore = create<TCronometroState>((set, get) => ({
 			ativo: false,
 			intervaloId: intervaloId ? (clearInterval(intervaloId), null) : null,
 		});
-
-		console.log('Estudo registrado:', novoRegistro);
 	},
 }));
