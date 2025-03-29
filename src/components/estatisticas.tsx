@@ -45,11 +45,11 @@ export function EstatisticasLista() {
 	return (
 		<div className="space-y-6">
 			{estatisticas.length > 0 ? (
-				<div>
+				<div className="flex flex-col gap-4">
 					{estatisticas.map(({ disciplina, total, temas }) => (
 						<div
 							key={disciplina}
-							className="border p-4 rounded-xl shadow-sm bg-white"
+							className="border p-4 rounded-xl shadow-md bg-white"
 						>
 							<h2 className="text-xl font-bold mb-2">
 								{disciplina} — Total: {formatarTempo(total)}
