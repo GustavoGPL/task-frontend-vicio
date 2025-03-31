@@ -89,7 +89,7 @@ export default function DisciplinaForm() {
 							name="subject"
 							render={({ field }) => (
 								<FormItem>
-									<FormLabel>Matéria</FormLabel>
+									<FormLabel>Disciplina</FormLabel>
 									<Select
 										onValueChange={value => {
 											field.onChange(value);
@@ -136,17 +136,19 @@ export default function DisciplinaForm() {
 											</SelectTrigger>
 										</FormControl>
 										<SelectContent>
-											{selectedSubject
-												? themesPerSubject
-														.filter(theme => theme.subject === selectedSubject)
-														.flatMap(theme =>
-															theme.themes.map(t => (
-																<SelectItem value={t.name} key={t.id}>
-																	{t.name}
-																</SelectItem>
-															))
-														)
-												: []}
+											{selectedSubject ? (
+												themesPerSubject
+													.filter(theme => theme.subject === selectedSubject)
+													.flatMap(theme =>
+														theme.themes.map(t => (
+															<SelectItem value={t.name} key={t.id}>
+																{t.name}
+															</SelectItem>
+														))
+													)
+											) : (
+												<p className="text-center">Selecione uma matéria</p>
+											)}
 										</SelectContent>
 									</Select>
 									<FormMessage />

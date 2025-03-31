@@ -25,7 +25,7 @@ export default function Sidebar() {
 	return (
 		<div className="flex">
 			<div
-				className={`bg-gray-900 text-white flex flex-col p-3 shadow-lg transition-all duration-300 ${
+				className={`bg-[#8216C6] text-white flex flex-col p-3 shadow-lg transition-all duration-300 ${
 					isOpen ? 'w-48' : 'w-16'
 				} sm:w-48`}
 			>
@@ -38,7 +38,7 @@ export default function Sidebar() {
 				<nav className="flex flex-col space-y-4">
 					<Link
 						href="/"
-						className="flex items-center p-2 rounded hover:bg-gray-700"
+						className="flex items-center p-2 rounded hover:bg-[#64288a]"
 					>
 						<FiHome size={24} />
 						<span className={`ml-2 ${isOpen ? 'block' : 'hidden'}`}>
@@ -47,7 +47,7 @@ export default function Sidebar() {
 					</Link>
 					<Link
 						href="/estatisticas"
-						className="flex items-center p-2 rounded hover:bg-gray-700"
+						className="flex items-center p-2 rounded hover:bg-[#64288a]"
 					>
 						<FaChartBar size={24} />
 						<span className={`ml-2 ${isOpen ? 'block' : 'hidden'}`}>

@@ -9,7 +9,7 @@ export default function SubjectCard() {
 
 	return (
 		<div className="py-6 px-4 sm:px-12">
-			<h2 className="text-center text-2xl font-bold mb-10 border-t-2 py-6">
+			<h2 className="text-center text-2xl text-slate-700 font-bold mb-10 border-t-2 py-6">
 				Estudos
 			</h2>
 			<div
