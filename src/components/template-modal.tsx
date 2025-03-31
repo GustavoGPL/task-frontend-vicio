@@ -20,7 +20,6 @@ export type TmodalTemplate = {
 export default function ModalTemplate(props: TmodalTemplate) {
 	const [modalKey, setModalKey] = useState(0);
 
-	// Sempre que o modal for aberto, incrementamos a chave
 	useEffect(() => {
 		if (props.open) {
 			setModalKey(prevKey => prevKey + 1);
@@ -34,16 +33,16 @@ export default function ModalTemplate(props: TmodalTemplate) {
 			} fixed inset-0 h-screen bg-black bg-opacity-30 flex justify-center items-center z-50`}
 		>
 			<motion.div
-				key={modalKey} // Sempre que a chave mudar, a animação será repetida
+				key={modalKey}
 				className="relative bg-white w-full lg:w-2/3 max-w-modal min-w-modal min-h-[40vh] rounded-md m-4"
-				initial={{ opacity: 0, y: -100 }} // Começa invisível e acima da tela
-				animate={{ opacity: 1, y: 0 }} // Aparece e se move para sua posição final
-				exit={{ opacity: 0, y: 100 }} // Quando sai, se move para baixo e desaparece
+				initial={{ opacity: 0, y: -100 }}
+				animate={{ opacity: 1, y: 0 }}
+				exit={{ opacity: 0, y: 100 }}
 				transition={{
-					type: 'spring', // Usamos uma animação de tipo "spring" para o efeito de pulo
-					stiffness: 200, // Rigidez da mola (controla a intensidade do "salto")
-					damping: 25, // Suavidade da animação
-					duration: 0.5, // Duração total da animação
+					type: 'spring',
+					stiffness: 200,
+					damping: 25,
+					duration: 0.5,
 				}}
 			>
 				<div>
