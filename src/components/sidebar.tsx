@@ -31,7 +31,7 @@ export default function Sidebar() {
 			>
 				<button
 					onClick={() => setIsOpen(!isOpen)}
-					className="text-white mb-4 p-2 rounded hover:bg-gray-700 sm:hidden"
+					className="text-white mb-4 p-2 rounded hover:bg-[#64288a] sm:hidden "
 				>
 					{isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
 				</button>
