@@ -37,11 +37,11 @@ Acesse o projeto no navegador
 
 O servidor estará rodando em http://localhost:3000.
 
-## 🧩 Descrição dos Componentes
+## 🧩 Descrição das Bibliotecas
 
 Este projeto utiliza uma série de bibliotecas e componentes que proporcionam uma experiência de desenvolvimento mais fluida e eficiente. Abaixo estão os componentes e bibliotecas principais utilizadas:
 
-### Componentes e Bibliotecas Principais:
+### Bibliotecas Principais:
 
 - **React Hook Form**  
   Usado para gerenciar formulários de forma eficiente e com validação de dados.
@@ -66,7 +66,7 @@ Este projeto utiliza uma série de bibliotecas e componentes que proporcionam um
 
 ---
 
-## ⚙️ Principais Escolhas Técnicas
+## ⚙️ Escolhas Técnicas
 
 A seguir, explicamos as principais escolhas técnicas adotadas no projeto:
 
