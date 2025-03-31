@@ -1,6 +1,5 @@
 'use client';
 import { EstatisticasLista } from '@/components/estatisticas';
-import { useCronometroStore } from '@/hooks/useCronometro';
 
 export default function Estatisticas() {
 	return (
